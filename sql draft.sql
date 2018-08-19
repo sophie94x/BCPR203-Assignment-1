@@ -11,7 +11,7 @@ dateOfBirth date
 
 create table Course(
 courseID char(6) primary key,
-courseName varchar(25)
+courseName varchar(30)
 )engine InnoDB;
 
 create table Enrolment(
@@ -54,7 +54,7 @@ primary key(enrolID, sessionID)
 
 create table Branch(
 branchID char(4) primary key,
-branchName varchar(20),
+branchName varchar(25),
 sessionID char(8),
 foreign key(sessionID) references LearningSession(sessionID)
 )engine InnoDB;
